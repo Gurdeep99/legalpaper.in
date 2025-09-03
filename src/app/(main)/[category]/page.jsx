@@ -23,7 +23,7 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 1 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice1.png" alt="case" />
+                    <img src="/assets/img/Practices/practice1.png" alt="case" />
                   </div>
                   <div className="single-practice-area">
                     <h5>Patent Infringement</h5>
@@ -41,7 +41,7 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 2 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice2.png" alt="case" />
+                    <img src="/assets/img/Practices/practice2.png" alt="case" />
                   </div>
                   <div className="single-practice-area">
                     <h5>Domestic Violence</h5>
@@ -59,7 +59,7 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 3 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice3.png" alt="case" />
+                    <img src="/assets/img/Practices/practice3.png" alt="case" />
                   </div>
                   <div className="single-practice-area">
                     <h5>Banking &amp; Finance</h5>
@@ -77,7 +77,7 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 4 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice4.png" alt="case" />
+                    <img src="/assets/img/Practices/practice4.png" alt="case" />
                   </div>
                   <div className="single-practice-area">
                     <h5>Travel Accident</h5>
@@ -95,8 +95,8 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 5 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice5.png" alt="case" />
-                  </div>
+                    <img src="/assets/img/Practices/practice5.png" alt="case" />
+                  </div>  
                   <div className="single-practice-area">
                     <h5>Education Law</h5>
                     <p className="disc">
@@ -113,7 +113,7 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 6 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice6.png" alt="case" />
+                    <img src="/assets/img/Practices/practice6.png" alt="case" />
                   </div>
                   <div className="single-practice-area">
                     <h5>Criminal Justice</h5>
@@ -131,7 +131,7 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 7 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice7.png" alt="case" />
+                    <img src="/assets/img/Practices/practice7.png" alt="case" />
                   </div>
                   <div className="single-practice-area">
                     <h5>Commercial Litigation</h5>
@@ -149,7 +149,7 @@ const page = () => {
                 <div className="single-case-info single-practice-style2">
                   {/* single practice 8 */}
                   <div className="single-case-img single-practice-img">
-                    <img src="assets/img/Practices/practice8.png" alt="case" />
+                    <img src="/assets/img/Practices/practice8.png" alt="case" />
                   </div>
                   <div className="single-practice-area">
                     <h5>Property &amp; Business</h5>

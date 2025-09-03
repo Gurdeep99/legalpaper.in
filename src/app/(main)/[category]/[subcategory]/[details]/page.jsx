@@ -1,3 +1,4 @@
+"use client"
 import TitleArea from '@/components/TitleArea'
 import Image from 'next/image'
 import React from 'react'

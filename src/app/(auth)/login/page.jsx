@@ -12,12 +12,12 @@ export default function page() {
                 <div className="card-body p-0 bg-black auth-header-box rounded-top">
                   <div className="text-center p-3">
                     <a href="index.html" className="logo logo-admin">
-                      <Image
-                        source="/assets/img/main.png"
+                      {/* <Image
+                        source={"/assets/img/main.png"}
                         width={300}
                         alt="logo"
                         className="auth-logo"
-                      />
+                      /> */}
                     </a>
                   </div>
                 </div>
