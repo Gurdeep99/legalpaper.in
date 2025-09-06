@@ -87,6 +87,35 @@ const page = () => {
           description: 'Start-up mentored',
         }
       ]
+    },
+    testimonial: {
+      title: "Trusted by Our Customers",
+      data: [
+          {
+              stars: 5,
+              description: "Culture nurtures and strives, creativity, legal expertise and is client focused we enhance entrepreneurial environment to be flexible supportive, allowing our lawyers introduced rather to totally all and feel the charm of existence",
+              author: "Alina",
+              authorTitle: "Senior Associate"
+          },
+          {
+              stars: 3,
+              description: "Culture nurtures and strives, creativity, legal expertise and is client focused we enhance entrepreneurial environment to be flexible supportive, allowing our lawyers introduced rather to totally all and feel the charm of existence",
+              author: "Katie",
+              authorTitle: "Senior Associate"
+          },
+          {
+              stars: 1,
+              description: "Culture nurtures and strives, creativity, legal expertise and is client focused we enhance entrepreneurial environment to be flexible supportive, allowing our lawyers introduced rather to totally all and feel the charm of existence",
+              author: "Shanaya",
+              authorTitle: "Senior Associate"
+          },
+          {
+              stars: 2,
+              description: "Culture nurtures and strives, creativity, legal expertise and is client focused we enhance entrepreneurial environment to be flexible supportive, allowing our lawyers introduced rather to totally all and feel the charm of existence",
+              author: "Lisa",
+              authorTitle: "Senior Associate"
+          }
+      ]
     }
   };
 
