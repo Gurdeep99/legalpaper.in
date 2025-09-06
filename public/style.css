@@ -1097,7 +1097,6 @@ input[type=color] {
 /*  12. HERO SECTION CSS START
 /*----------------------------------------*/
 .hero-section {
-  background-image: url(assets/img/hero/hero-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
