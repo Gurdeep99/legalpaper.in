@@ -7,26 +7,8 @@ const Footer = () => {
             <footer className="footer">
                 <div className="section-overlay">
                     <div className="container">
-                        <div className="row">
-                            <div className="col-md-1 col-lg-2 col-xl-3" />
-                            <div className="col-md-10 col-lg-8 col-xl-6">
-                                <div className="newsletter text-center ptb-140">
-                                    <h3 className="tx-white">Subscribe to Our Newsletter!</h3>
-                                    <p>We will only send you important updates and notices.</p>
-                                    <div className="site-sub">
-                                        <form action="#">
-                                            <i className="ph-fill ph-envelope-open" />
-                                            <input type="email" placeholder="Your Email Address" />
-                                            <button type="submit" className="mt-btn">
-                                                Subscribe Now
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-1 col-lg-2 col-xl-3" />
-                        </div>
-                        <div className="row pb-100">
+                        
+                        <div className="row pb-100" style={{paddingTop: '100px'}}>
                             <div className="col-sm-6 col-md-12 col-lg-4">
                                 <div className="footer-widget">
                                     <div className="footer-widget-logo">

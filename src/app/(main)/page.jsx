@@ -1,9 +1,12 @@
 "use client";
 import ContactForm from '@/components/contactForm'
 import Hero from '@/components/website/Hero';
+import MarqueStrip from '@/components/website/MarqueStrip';
+import QuickBuy from '@/components/website/QuickBuy';
 import ServiceStrip from '@/components/website/ServiceStrip';
 import Strip from '@/components/website/Strip';
 import Testimonial from '@/components/website/Testimonial';
+import WhatWeServer from '@/components/website/WhatWeServer';
 import React from 'react'
 
 const page = () => {
@@ -127,46 +130,9 @@ const page = () => {
       {/* practice area section start */}
       {true && <ServiceStrip data={TT} />}
       {/* practice area section end */}
-      <Strip data={TT} />
+      {true && <Strip data={TT} />}
       {/* about section start */}
-      {false && <section className="about-section about-section-home1 ptb-140 bg-dark-white">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-5">
-              <div className="sec-content">
-                <h3 className="sec-title mb-26">
-                  We Help to Avoid &amp; Solve Legal Problems
-                </h3>
-                <p>
-                  Our culture nurtures and strives to achieve innovation,
-                  creatGivity, legal expertise and is client focused. Daily, we
-                  enhance our entrepreneurial environment to be flexible and
-                  supportive, allowing our lawyers
-                </p>
-                <div className="achivement-logos mt-26">
-                  <img src="assets/img/about/image39.png" alt="achivement-logo" />
-                  <img src="assets/img/about/image40.png" alt="achivement-logo" />
-                  <img src="assets/img/about/image41.png" alt="achivement-logo" />
-                  <img src="assets/img/about/image42.png" alt="achivement-logo" />
-                </div>
-                <a href="about.html" className="mt-btn">
-                  More About Us
-                </a>
-              </div>
-            </div>
-            <div className="col-xl-6 offset-xl-1 order-first order-xl-1">
-              <div className="about-sec-img">
-                <div className="about-img-rap about-img-one float-end w-img">
-                  <img src="assets/img/about/about-sec-img1.png" alt="juristic" />
-                </div>
-                <div className="about-img-rap about-img-two w-img">
-                  <img src="assets/img/about/about-sec-img2.png" alt="juristic" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>}
+      {true && <WhatWeServer />}
       {/* about section end */}
       {/* case studies section start */}
       {false && <section className="case-studies-section ptb-140 bg-light-white">
@@ -579,138 +545,9 @@ const page = () => {
       </section>}
       {/* history section end */}
       {/* attornys team section start */}
-      {false && <section className="attorney-section ptb-140 bg-dark-white">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 col-lg-3">
-              {/* single-attorney-1 */}
-              <div className="single-attorney wow fadeInLeft">
-                <div
-                  className="attorney-social-wrapper"
-                  data-wow-delay=".4s"
-                  data-wow-duration=".5s"
-                >
-                  <img src="assets/img/attorneys/attorney1.png" alt="attorney" />
-                  <div className="attorney-social-icon text-center">
-                    <a href="#">
-                      <i className="ph-fill ph-linkedin-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-twitter-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-youtube-logo" />
-                    </a>
-                  </div>
-                </div>
-                <div className="attorney-info">
-                  <h4 className="heading-style2">
-                    <a href="attorney-single.html">Shawn S. Kerendian</a>
-                  </h4>
-                  <span className="attorney-title">Associate Director</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              {/* single-attorney-2 */}
-              <div
-                className="single-attorney wow fadeInLeft"
-                data-wow-delay=".8s"
-                data-wow-duration=".5s"
-              >
-                <div className="attorney-social-wrapper">
-                  <img src="assets/img/attorneys/attorney2.png" alt="attorney" />
-                  <div className="attorney-social-icon text-center">
-                    <a href="#">
-                      <i className="ph-fill ph-linkedin-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-twitter-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-youtube-logo" />
-                    </a>
-                  </div>
-                </div>
-                <div className="attorney-info">
-                  <h4 className="heading-style2">
-                    <a href="attorney-single.html">Jeffrey M. Oberto</a>
-                  </h4>
-                  <span className="attorney-title">Senior Partner</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              {/* single-attorney-3 */}
-              <div
-                className="single-attorney wow fadeInLeft"
-                data-wow-delay="1.2s"
-                data-wow-duration=".5s"
-              >
-                <div className="attorney-social-wrapper">
-                  <img src="assets/img/attorneys/attorney3.png" alt="attorney" />
-                  <div className="attorney-social-icon text-center">
-                    <a href="#">
-                      <i className="ph-fill ph-linkedin-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-twitter-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-youtube-logo" />
-                    </a>
-                  </div>
-                </div>
-                <div className="attorney-info">
-                  <h4 className="heading-style2">
-                    <a href="attorney-single.html">Lindsey F. Munyer</a>
-                  </h4>
-                  <span className="attorney-title">Managing Partner</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
-              {/* single-attorney-4 */}
-              <div
-                className="single-attorney wow fadeInLeft"
-                data-wow-delay="1.6s"
-                data-wow-duration=".5s"
-              >
-                <div className="attorney-social-wrapper">
-                  <img src="assets/img/attorneys/attorney4.png" alt="attorney" />
-                  <div className="attorney-social-icon text-center">
-                    <a href="#">
-                      <i className="ph-fill ph-linkedin-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-twitter-logo" />
-                    </a>
-                    <a href="#">
-                      <i className="ph-fill ph-youtube-logo" />
-                    </a>
-                  </div>
-                </div>
-                <div className="attorney-info">
-                  <h4 className="heading-style2">
-                    <a href="attorney-single.html">Steven A. Urenda</a>
-                  </h4>
-                  <span className="attorney-title">Senior Associate</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="meet-attorneys text-center">
-                <a href="attorneys.html" className="mt-btn">
-                  Meet With Other Attorneys
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>}
+      {true && <QuickBuy />}
       {/* attornys team section end */}
+      {true && <MarqueStrip />}
      
       {/* contact section start */}
       <ContactForm />
