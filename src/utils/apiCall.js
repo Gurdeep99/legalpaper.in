@@ -19,3 +19,13 @@ export const aboutDataApi = async () => {
         throw new Error("Failed to fetch data");
     };
 };
+
+export const contactDataApi = async () => {
+    try {
+        const contactDataResponse = await axios.get(`https://api.legalpaper.in/render/contact`);
+        const contactData = await contactDataResponse.data;
+        return contactData;
+    } catch (err) {
+        throw new Error("Failed to fetch data");
+    };
+};

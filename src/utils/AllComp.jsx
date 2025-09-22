@@ -2,6 +2,7 @@ import ContactForm from '@/components/contactForm';
 import TitleArea from '@/components/TitleArea';
 import Hero from '@/components/website/Hero';
 import History from '@/components/website/History';
+import Map from '@/components/website/Map';
 import MarqueStrip from '@/components/website/MarqueStrip';
 import QuickBuy from '@/components/website/QuickBuy';
 import ServiceStrip from '@/components/website/ServiceStrip';
@@ -27,6 +28,7 @@ const AllComp = ({ data }) => {
     testimonial: Testimonial,
     banner: TitleArea,
     history: History,
+    map : Map,
   };
 
   const Component = Components[data.componentId];

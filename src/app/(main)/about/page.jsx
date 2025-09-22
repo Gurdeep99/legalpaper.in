@@ -4,7 +4,7 @@ import React from 'react'
 
 const Page = async () => {
   const aboutDataResponse = await aboutDataApi();
-  console.log(aboutDataResponse, "---//--\\--");
+  // console.log(aboutDataResponse, "---//--\\--");
 
   if (!aboutDataResponse || aboutDataResponse.length === 0) {
     return <main>No data found</main>;
