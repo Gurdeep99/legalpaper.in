@@ -2,6 +2,11 @@ import React from 'react'
 import './style.css' // import your CSS file
 
 const Strip = ({ data }) => {
+  if (!data) {
+    console.warn('Strip: missing data');
+    return null; // skip rendering if data is missing
+  }
+
   return (
     <div className="strip-container">
       <div className="strip-items">

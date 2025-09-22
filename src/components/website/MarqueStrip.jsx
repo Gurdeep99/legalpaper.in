@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 const MarqueeStrip = ({ data }) => {
-  if (!data?.items?.length) return null;
+  if (!data) return null;
 
   // Duplicate items to make the scroll seamless
   const logos = [...data.items, ...data.items, ...data.items, ...data.items];

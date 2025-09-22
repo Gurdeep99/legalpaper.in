@@ -1,6 +1,10 @@
 import React from 'react'
 
 const Testimonial = ({data}) => {
+   if (!data) {
+      console.warn('Testimonial: missing data');
+      return null; // skip rendering if data is missing
+    }
    return (
       <section className="testimonial-section ptb-140 bg-light-white">
          <div className="container-fluid">

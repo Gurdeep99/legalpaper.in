@@ -1,6 +1,10 @@
 import React from 'react'
 
 const Hero = ({ data = {} }) => {
+  if (!data) {
+    console.warn('Hero: missing data');
+    return null; // skip rendering if data is missing
+  }
 
   return (
     <section

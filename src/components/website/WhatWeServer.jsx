@@ -1,6 +1,11 @@
 import React from 'react'
 
 const WhatWeServer = ({ data }) => {
+  if (!data) {
+    console.warn('WhatWeServer: missing data');
+    return null; // skip rendering if data is missing
+  }
+
   return (
     <>
       {

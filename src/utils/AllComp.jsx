@@ -9,9 +9,13 @@ import Strip from '@/components/website/Strip';
 import Testimonial from '@/components/website/Testimonial';
 import WhatWeServer from '@/components/website/WhatWeServer';
 
-const Placeholder = () => <></>; // temporary empty component
 
 const AllComp = ({ data }) => {
+  if (!data || !data.dataMap) {
+    console.warn(`Missing data or dataMap for componentId: ${data?.componentId}`);
+    return null; // skip rendering this component
+  }
+
   const Components = {
     hero: Hero,
     service: ServiceStrip,
@@ -32,7 +36,8 @@ const AllComp = ({ data }) => {
     return null;
   }
 
-  return <main><Component data={data.dataMap} /></main>;
+  return <Component data={data.dataMap} />;
 };
 
 export default AllComp;
+

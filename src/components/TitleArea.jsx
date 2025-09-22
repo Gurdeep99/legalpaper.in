@@ -1,6 +1,10 @@
 import React from 'react'
 
 const TitleArea = ({ data }) => {
+    if (!data) {
+        console.warn('TitleArea: missing data');
+        return null; // skip rendering if data is missing
+      }
     return (
         <>
             <section className="page-title-area">

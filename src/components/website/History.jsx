@@ -2,6 +2,10 @@
 import React, { useState } from 'react';
 
 const History = ({ data: dataMap }) => {
+    if (!dataMap) {
+        console.warn('History: missing data');
+        return null; // skip rendering if data is missing
+      }
   const { title, tabs, body, bottom } = dataMap;
   const [activeTab, setActiveTab] = useState(0);
 

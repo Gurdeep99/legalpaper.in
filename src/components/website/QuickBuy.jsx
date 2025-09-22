@@ -1,6 +1,12 @@
 import React from 'react'
 
 const QuickBuy = ({ data}) => {
+
+  if (!data) {
+    console.warn('QuickBuy: missing data');
+    return null; // skip rendering if data is missing
+  }
+
   return (
     <section className="attorney-section ptb-140 bg-dark-white">
       <div style={{textAlign: "center", paddingBottom: "20px"}}><h3>{data?.title}</h3></div>

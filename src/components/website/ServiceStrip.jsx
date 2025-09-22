@@ -1,6 +1,10 @@
 import React from 'react'
 
 const ServiceStrip = ({ data }) => {
+  if (!data) {
+    console.warn('ServiceStrip: missing data');
+    return null; // skip rendering if data is missing
+  }
 
   return (
     <>
