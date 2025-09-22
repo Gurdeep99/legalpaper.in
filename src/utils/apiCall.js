@@ -29,3 +29,13 @@ export const contactDataApi = async () => {
         throw new Error("Failed to fetch data");
     };
 };
+
+export const privacyDataApi = async () => {
+    try {
+        const privacyDataResponse = await axios.get(`https://api.legalpaper.in/render/privacy-policy`);
+        const privacyData = await privacyDataResponse.data;
+        return privacyData;
+    } catch (err) {
+        throw new Error("Failed to fetch data");
+    };
+};

@@ -1,7 +1,9 @@
 import ContactForm from '@/components/contactForm';
 import TitleArea from '@/components/TitleArea';
+import DoubleColumn from '@/components/website/DoubleColumn';
 import Hero from '@/components/website/Hero';
 import History from '@/components/website/History';
+import InfoDisc from '@/components/website/InfoDisc';
 import Map from '@/components/website/Map';
 import MarqueStrip from '@/components/website/MarqueStrip';
 import QuickBuy from '@/components/website/QuickBuy';
@@ -29,6 +31,8 @@ const AllComp = ({ data }) => {
     banner: TitleArea,
     history: History,
     map : Map,
+    doubleColumn: DoubleColumn,
+    infodisc: InfoDisc,
   };
 
   const Component = Components[data.componentId];
