@@ -6,11 +6,10 @@ export const HomeDataApi = createAsyncThunk(
   async () => {
   
     try {
-      const response = await axios.get(`http://192.168.1.11:5001/render/home`,
+      const response = await axios.get(`https://api.legalpaper.in/render/home`,
         {
           headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
           },
         }
       );

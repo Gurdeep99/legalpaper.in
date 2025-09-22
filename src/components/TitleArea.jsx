@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TitleArea = ({ title, breadcrumb, link }) => {
+const TitleArea = ({ data }) => {
     return (
         <>
             <section className="page-title-area">
@@ -9,13 +9,13 @@ const TitleArea = ({ title, breadcrumb, link }) => {
                         <div className="row">
                             <div className="col">
                                 <div className="page-title-wrappper text-center">
-                                    <h2 className="page-title">{title}</h2>
+                                    <h2 className="page-title">{data.title}</h2>
                                     <ul className="breadcrumb-menu">
                                         <li className="breadcrumb-menu-item">
                                             <a href={"/"}>Home</a>
                                         </li>
                                         <li className="breadcrumb-menu-item">
-                                            <a href={link}>{breadcrumb}</a>
+                                            <a href={data.link}>{data.title}</a>
                                         </li>
                                     </ul>
                                 </div>
