@@ -1,7 +1,10 @@
 import Footer from "@/components/user/Footer";
 import SidePannel from "@/components/user/SidePannel";
 import TopNav from "@/components/user/TopNav";
+import ReduxProvider from "@/store/ReduxProvider";
+import { store } from "@/store/store";
 import Script from "next/script"; // ✅ use this for script tags in Next.js
+import { Provider } from "react-redux";
 
 export const metadata = {
   title: "Dashboard - LegalPaper",
@@ -10,37 +13,39 @@ export const metadata = {
 
 export default function AuthLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link href="/user/assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/user/assets/css/icons.min.css" rel="stylesheet" />
-        <link href="/user/assets/css/app.min.css" rel="stylesheet" />
-      </head>
-      <body>
-        {/* ✅ Layout components */}
-        <SidePannel />
-        <TopNav />
+    <ReduxProvider>
+      <html lang="en">
+        <head>
+          <link href="/user/assets/css/bootstrap.min.css" rel="stylesheet" />
+          <link href="/user/assets/css/icons.min.css" rel="stylesheet" />
+          <link href="/user/assets/css/app.min.css" rel="stylesheet" />
+        </head>
+        <body>
+          {/* ✅ Layout components */}
+          <SidePannel />
+          <TopNav />
 
-        {/* ✅ Page content */}
-        <main>
-          <div className="page-wrapper">
-            {/* Page Content*/}
-            <div className="page-content">
-              {children}
-              <Footer />
+          {/* ✅ Page content */}
+          <main>
+            <div className="page-wrapper">
+              {/* Page Content*/}
+              <div className="page-content">
+                {children}
+                <Footer />
+              </div>
             </div>
-          </div>
-          
+
           </main>
 
-        {/* ✅ Scripts - use <Script /> for loading properly in Next.js */}
-        <Script src="/user/assets/libs/bootstrap/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
-        <Script src="/user/assets/libs/simplebar/simplebar.min.js" strategy="lazyOnload" />
-        <Script src="/user/assets/libs/apexcharts/apexcharts.min.js" strategy="lazyOnload" />
-        <Script src="https://apexcharts.com/samples/assets/stock-prices.js" strategy="lazyOnload" />
-        <Script src="/user/assets/js/pages/index.init.js" strategy="lazyOnload" />
-        <Script src="/user/assets/js/app.js" strategy="lazyOnload" />
-      </body>
-    </html>
+          {/* ✅ Scripts - use <Script /> for loading properly in Next.js */}
+          <Script src="/user/assets/libs/bootstrap/js/bootstrap.bundle.min.js" strategy="beforeInteractive" />
+          <Script src="/user/assets/libs/simplebar/simplebar.min.js" strategy="lazyOnload" />
+          <Script src="/user/assets/libs/apexcharts/apexcharts.min.js" strategy="lazyOnload" />
+          <Script src="https://apexcharts.com/samples/assets/stock-prices.js" strategy="lazyOnload" />
+          <Script src="/user/assets/js/pages/index.init.js" strategy="lazyOnload" />
+          <Script src="/user/assets/js/app.js" strategy="lazyOnload" />
+        </body>
+      </html>
+    </ReduxProvider>
   );
 }

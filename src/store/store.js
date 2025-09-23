@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "./slices/authSlice";
-import HomeDataApiReducer from "./slices/homeSlice";
+import MeDataApiReducer from "./slices/meSlice";
 
 export const store = configureStore({
   reducer: {
     auth: authReducer,
-    HomeDataApiSlice: HomeDataApiReducer,
+    MeDataApi: MeDataApiReducer,
   },
 });

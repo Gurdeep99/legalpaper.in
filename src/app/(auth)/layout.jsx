@@ -1,6 +1,4 @@
-import Footer from "@/components/user/Footer";
-import SidePannel from "@/components/user/SidePannel";
-import TopNav from "@/components/user/TopNav";
+
 import Script from "next/script"; // ✅ use this for script tags in Next.js
 
 export const metadata = {
@@ -9,6 +7,7 @@ export const metadata = {
 };
 
 export default function AuthLayout({ children }) {
+
   return (
     <html lang="en">
       <head>

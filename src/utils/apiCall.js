@@ -39,3 +39,50 @@ export const privacyDataApi = async () => {
         throw new Error("Failed to fetch data");
     };
 };
+
+export const registerUserAuthApi = async ({name, email, phone = "", password, confirmPassword}) => {
+    try {
+      const registerAuthResponse = await axios.post(
+        'https://api.legalpaper.in/user/register',
+        {
+            "fullName": name,
+            "email": email,
+            "phone": phone,
+            "password": password,
+            "confirmPassword": confirmPassword
+        },      
+        {
+          headers: {
+            'Content-Type': 'application/json', // example header
+          },
+        },   // this is the headers/config
+      );
+  
+      return registerAuthResponse.data;
+    } catch (err) {
+      console.error(err.response?.data || err.message);
+      throw new Error("Failed to fetch data");
+    }
+  };
+
+export const loginUserAuthApi = async ({email, password}) => {
+    try {
+      const loginAuthResponse = await axios.post(
+        'https://api.legalpaper.in/user/login',
+        {
+            "email": email,
+            "password": password,
+        },      
+        {
+          headers: {
+            'Content-Type': 'application/json', // example header
+          },
+        },   // this is the headers/config
+      );
+  
+      return loginAuthResponse.data;
+    } catch (err) {
+      console.error(err.response?.data || err.message);
+      throw new Error("Failed to fetch data");
+    }
+  };
