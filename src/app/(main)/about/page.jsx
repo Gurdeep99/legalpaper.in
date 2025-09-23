@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import AllComp from '@/utils/AllComp';
 import { aboutDataApi } from '@/utils/apiCall';
 import React from 'react'

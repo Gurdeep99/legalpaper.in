@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import ContactForm from '@/components/contactForm'
 import TitleArea from '@/components/TitleArea'
 import React from 'react'
