@@ -14,7 +14,8 @@ export default function LoginPage() {
 
   useEffect(() => {
     const token = Cookies.get('token');
-    if (token) {
+    const _uud = Cookies.get('_uud');
+    if (token && _uud) {
       window.location.href = '/dashboard';
     }
   }, []);
@@ -33,9 +34,9 @@ export default function LoginPage() {
       password: formData.password,
     });
 
-    console.log(response);
     if(response.status_code === 200) {
       Cookies.set('token', response.token, { expires: 365 });
+      Cookies.set('_uud', response.id, { expires: 365 });
       window.location.href = '/dashboard';
     }else{
       alert('Login failed');

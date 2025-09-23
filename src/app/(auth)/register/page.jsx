@@ -25,7 +25,8 @@ const Page = () => {
   useEffect(() => {
     // Check if token cookie exists, if yes redirect to /dashboard
     const token = Cookies.get('token');
-    if (token) {
+    const _uud = Cookies.get('_uud');
+    if (token && _uud) {
       window.location.href = '/dashboard';
     }
   }, []);
@@ -40,12 +41,10 @@ const Page = () => {
         mobileNumber: formData.mobileNumber,
       });
 
-      console.log(response);
-
       if (response.status_code === 201) {
         // Store token in cookies for 1 year
         Cookies.set('token', response.token, { expires: 365 });
-
+        Cookies.set('_uud', response.id, { expires: 365 });
         // Redirect to dashboard
         window.location.href = '/dashboard';
       } else {
