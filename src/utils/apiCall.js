@@ -65,13 +65,58 @@ export const registerUserAuthApi = async ({name, email, phone = "", password, co
     }
   };
 
-export const loginUserAuthApi = async ({email, password}) => {
+  export const loginUserAuthApi = async ({email, password}) => {
     try {
       const loginAuthResponse = await axios.post(
         'https://api.legalpaper.in/user/login',
         {
             "email": email,
             "password": password,
+        },      
+        {
+          headers: {
+            'Content-Type': 'application/json', // example header
+          },
+        },   // this is the headers/config
+      );
+  
+      return loginAuthResponse.data;
+    } catch (err) {
+      console.error(err.response?.data || err.message);
+      throw new Error("Failed to fetch data");
+    }
+  };
+
+  export const resetPasswordIniciateAuthApi = async ({email}) => {
+    try {
+      const loginAuthResponse = await axios.post(
+        'https://api.legalpaper.in/user/forgot-password/send',
+        {
+            "email": email,
+        },      
+        {
+          headers: {
+            'Content-Type': 'application/json', // example header
+          },
+        },   // this is the headers/config
+      );
+  
+      return loginAuthResponse.data;
+    } catch (err) {
+      console.error(err.response?.data || err.message);
+      throw new Error("Failed to fetch data");
+    }
+  };
+
+  export const resetPasswordAuthApi = async ({email, otp, newPassword, confirmPassword}) => {
+    try {
+      const loginAuthResponse = await axios.post(
+        'https://api.legalpaper.in/user/forgot-password/reset',
+        {
+          "email": email,
+          "otp": otp,
+          "newPassword": newPassword,
+          "confirmPassword": confirmPassword
         },      
         {
           headers: {

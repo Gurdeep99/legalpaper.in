@@ -9,7 +9,7 @@ const Footer = () => {
               <div className="card mb-0 rounded-bottom-0">
                 <div className="card-body">
                   <p className="text-muted mb-0">
-                    © Legal Paper
+                    © Legal Paper 2025
                     <span className="text-muted d-none d-sm-inline-block float-end">
                       Design & Developed with{" "}
                       <i className="iconoir-heart-solid text-danger align-middle" />

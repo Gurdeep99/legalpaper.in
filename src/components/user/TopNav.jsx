@@ -44,7 +44,7 @@ const TopNav = () => {
             </li>
             <li className="mx-2 welcome-text">
               <h5 className="mb-0 fw-semibold text-truncate">
-                Good Morning, {data?.fullName || "User"}!
+                Good Morning, {data?.user?.fullName || "User"}!
               </h5>
             </li>
           </ul>
@@ -54,7 +54,7 @@ const TopNav = () => {
             {/* User Profile */}
             <li className="dropdown topbar-item">
               <a className="nav-link dropdown-toggle nav-icon" data-bs-toggle="dropdown" href="#">
-                <p className="mb-0 fw-semibold text-truncate">{data?.fullName?.charAt(0)?.toUpperCase()}</p>
+                <p className="mb-0 fw-semibold text-truncate">{data?.user?.fullName?.charAt(0)?.toUpperCase()}</p>
               </a>
               <div className="dropdown-menu dropdown-menu-end py-0">
                 {/* <div className="d-flex align-items-center dropdown-item py-2 bg-secondary-subtle">
@@ -68,7 +68,7 @@ const TopNav = () => {
                       />
                     </div>
                   <div className="flex-grow-1 ms-2 text-truncate">
-                    <h6 className="my-0 fw-medium text-dark fs-13">{data?.fullName || "William Martin"}</h6>
+                    <h6 className="my-0 fw-medium text-dark fs-13">{data?.user?.fullName}</h6>
                   </div>
                 </div> */}
                 {/* <div className="dropdown-divider" /> */}

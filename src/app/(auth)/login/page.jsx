@@ -116,12 +116,12 @@ export default function LoginPage() {
                         </div>
 
                         <div className="col-sm-6 text-end">
-                          <a
-                            href="auth-recover-pw.html"
+                          <Link
+                            href={"/forgot-password"}
                             className="text-muted font-13"
                           >
                             <i className="dripicons-lock" /> Forgot password?
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
